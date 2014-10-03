@@ -14,6 +14,8 @@
 		580C689919DE17E400CDBD88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580C689819DE17E400CDBD88 /* Images.xcassets */; };
 		580C689C19DE17E400CDBD88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C689A19DE17E400CDBD88 /* LaunchScreen.xib */; };
 		580C68A819DE17E400CDBD88 /* textInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C68A719DE17E400CDBD88 /* textInputTests.m */; };
+		580C68B619DE196D00CDBD88 /* epAnimatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C68B519DE196D00CDBD88 /* epAnimatedTextField.m */; };
+		580C68B919DE241700CDBD88 /* 00NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 580C68B719DE241700CDBD88 /* 00NOTES */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		580C68A119DE17E400CDBD88 /* textInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580C68A619DE17E400CDBD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		580C68A719DE17E400CDBD88 /* textInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textInputTests.m; sourceTree = "<group>"; };
+		580C68B419DE196D00CDBD88 /* epAnimatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epAnimatedTextField.h; sourceTree = "<group>"; };
+		580C68B519DE196D00CDBD88 /* epAnimatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = epAnimatedTextField.m; sourceTree = "<group>"; };
+		580C68B719DE241700CDBD88 /* 00NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00NOTES; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,13 @@
 		580C688A19DE17E400CDBD88 /* textInput */ = {
 			isa = PBXGroup;
 			children = (
+				580C68B719DE241700CDBD88 /* 00NOTES */,
 				580C688F19DE17E400CDBD88 /* AppDelegate.h */,
 				580C689019DE17E400CDBD88 /* AppDelegate.m */,
 				580C689219DE17E400CDBD88 /* ViewController.h */,
 				580C689319DE17E400CDBD88 /* ViewController.m */,
+				580C68B419DE196D00CDBD88 /* epAnimatedTextField.h */,
+				580C68B519DE196D00CDBD88 /* epAnimatedTextField.m */,
 				580C689519DE17E400CDBD88 /* Main.storyboard */,
 				580C689819DE17E400CDBD88 /* Images.xcassets */,
 				580C689A19DE17E400CDBD88 /* LaunchScreen.xib */,
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580C68B919DE241700CDBD88 /* 00NOTES in Resources */,
 				580C689719DE17E400CDBD88 /* Main.storyboard in Resources */,
 				580C689C19DE17E400CDBD88 /* LaunchScreen.xib in Resources */,
 				580C689919DE17E400CDBD88 /* Images.xcassets in Resources */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				580C689419DE17E400CDBD88 /* ViewController.m in Sources */,
+				580C68B619DE196D00CDBD88 /* epAnimatedTextField.m in Sources */,
 				580C689119DE17E400CDBD88 /* AppDelegate.m in Sources */,
 				580C688E19DE17E400CDBD88 /* main.m in Sources */,
 			);
