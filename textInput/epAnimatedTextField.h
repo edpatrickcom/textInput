@@ -10,6 +10,9 @@
 
 @interface epAnimatedTextField : UITextField
 
+// init
+
+- (id)initWithFrame:(CGRect)frame icon:(UIImageView *)icon;
 
 
 

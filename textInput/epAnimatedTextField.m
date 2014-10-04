@@ -15,6 +15,7 @@
 
 @property (strong,nonatomic) CABasicAnimation *appearAnimation;
 
+
 @end
 
 
@@ -24,15 +25,16 @@
 
 @implementation epAnimatedTextField
 
-@synthesize appearAnimation = _appearAnimation;
-
+@synthesize appearAnimation    = _appearAnimation;
 
 
 
 
 #pragma mark - UITextField Stack
 
-- (id)initWithFrame:(CGRect)frame {
+
+
+- (id)initWithFrame:(CGRect)frame icon:(UIImageView *)icon {
     
     self = [super initWithFrame:frame];
     
@@ -42,11 +44,17 @@
         
         self.hidden = YES;
         
+        if (icon) {
+            
+            self.leftView = icon;
+            self.leftViewMode = UITextFieldViewModeAlways;
+            
+        }
+        
         
         // create the appear animation with a default duration
         
-        _appearAnimation = [self makeAppearAnimationWithDuration:0.3];
-        
+        _appearAnimation    = [self makeAppearAnimationWithDuration:0.3];
         
         
     }
@@ -57,14 +65,38 @@
 }
 
 
-- (void)drawRect:(CGRect)rect {
 
-    NSLog(@"epAnimatedTextField drawRect");
+
+
+// Can put custom drawing code here
+// Below is some example code the draws a border
+
+
+/*
+
+- (void)drawRect:(CGRect)rect {
+        
+    //// Variable Declarations
+ 
+    CGFloat outerBorderWidth = self.bounds.size.width;
+    CGFloat outerBorderHeight = self.bounds.size.height;
+    CGFloat outerBorderCornerRadius = 0;
     
-    
+    //// Rectangle Drawing
+ 
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(0, 0, outerBorderWidth, outerBorderHeight) cornerRadius: outerBorderCornerRadius];
+    [UIColor.clearColor setFill];
+    [rectanglePath fill];
+    [UIColor.grayColor setStroke];
+    rectanglePath.lineWidth = 2;
+    [rectanglePath stroke];
+
 
 
 }
+
+*/
+
 
 
 
@@ -79,13 +111,13 @@
     self.appearAnimation.duration = duration;
     
     
-    
     // run the animation
     
     [self.layer addAnimation:_appearAnimation forKey:@"scale"];
 
     
 }
+
 
 
 
@@ -108,7 +140,6 @@
     
     // Set duration
     
-    // [theAnimation setDuration:1.0f];
     [theAnimation setDuration:duration];
     
     // Set animation to be consistent on completion
@@ -128,13 +159,13 @@
     
     
     
-    // How to run the animation
-    
-    // [pronounLayer setHidden:NO];
-    // [pronounLayer addAnimation:pronounAnimation forKey:@"scale"];
-    
     
 }
+
+
+
+
+
 
 
 

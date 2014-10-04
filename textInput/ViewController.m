@@ -27,16 +27,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    // an icon to be placed on the left side of the text field
+    
+    UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"anIcon"]];
+    
+    
+    // set up the text field
 
-    _animatedTextField = [[epAnimatedTextField alloc] initWithFrame:CGRectMake(100, 100, 400, 60)];
+    _animatedTextField = [[epAnimatedTextField alloc] initWithFrame:CGRectMake(100, 100, 400, 60) icon:icon];
     _animatedTextField.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
     _animatedTextField.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     _animatedTextField.font = [UIFont fontWithName:@"Helvetica" size:24];
     _animatedTextField.delegate = self;
     
+    
+    
+    // add the text field to the main view
+    
     [self.view addSubview:_animatedTextField];
 
 
+    
+    // make the text field pop up
     
     NSTimer *timer = [NSTimer
                       scheduledTimerWithTimeInterval:3.0
@@ -60,6 +75,10 @@
 
 
 
+
+
+
+
 #pragma mark - Animation
 
 - (void)makeAnimatedTextFieldAppear {
@@ -71,8 +90,10 @@
 
 
 
-#pragma mark - UITextFieldDelegate Stack
 
+
+
+#pragma mark - UITextFieldDelegate Stack
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -81,9 +102,14 @@
     
     [_animatedTextField resignFirstResponder];
     
+    
+    
+    
     // print the value submitted
     
     NSLog(@"textFieldShouldReturn %@", textField.text);
+    
+    
     
     
     
