@@ -35,3 +35,13 @@ UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"anI
 
 animatedTextField = [[epAnimatedTextField alloc] initWithFrame:CGRectMake(100, 100, 568, 60) icon:icon];
 ```
+
+Customize the Animated Text Field
+
+```
+// Customize the Text Field (optional)
+
+animatedTextField.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
+animatedTextField.textColor       = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+animatedTextField.font            = [UIFont fontWithName:@"Helvetica" size:24];
+```
