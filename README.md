@@ -1,4 +1,4 @@
-textInput
+epAnimatedTextField
 =========
 
 Version: 0.1
