@@ -15,7 +15,7 @@
 		580C689C19DE17E400CDBD88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C689A19DE17E400CDBD88 /* LaunchScreen.xib */; };
 		580C68A819DE17E400CDBD88 /* textInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C68A719DE17E400CDBD88 /* textInputTests.m */; };
 		580C68B619DE196D00CDBD88 /* epAnimatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C68B519DE196D00CDBD88 /* epAnimatedTextField.m */; };
-		580C68B919DE241700CDBD88 /* 00NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 580C68B719DE241700CDBD88 /* 00NOTES */; };
+		580C68B919DE241700CDBD88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 580C68B719DE241700CDBD88 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		580C68A719DE17E400CDBD88 /* textInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textInputTests.m; sourceTree = "<group>"; };
 		580C68B419DE196D00CDBD88 /* epAnimatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epAnimatedTextField.h; sourceTree = "<group>"; };
 		580C68B519DE196D00CDBD88 /* epAnimatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = epAnimatedTextField.m; sourceTree = "<group>"; };
-		580C68B719DE241700CDBD88 /* 00NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00NOTES; sourceTree = "<group>"; };
+		580C68B719DE241700CDBD88 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		580C688A19DE17E400CDBD88 /* textInput */ = {
 			isa = PBXGroup;
 			children = (
-				580C68B719DE241700CDBD88 /* 00NOTES */,
+				580C68B719DE241700CDBD88 /* README.md */,
 				580C688F19DE17E400CDBD88 /* AppDelegate.h */,
 				580C689019DE17E400CDBD88 /* AppDelegate.m */,
 				580C689219DE17E400CDBD88 /* ViewController.h */,
@@ -207,7 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580C68B919DE241700CDBD88 /* 00NOTES in Resources */,
+				580C68B919DE241700CDBD88 /* README.md in Resources */,
 				580C689719DE17E400CDBD88 /* Main.storyboard in Resources */,
 				580C689C19DE17E400CDBD88 /* LaunchScreen.xib in Resources */,
 				580C689919DE17E400CDBD88 /* Images.xcassets in Resources */,
@@ -424,6 +424,7 @@
 				580C68AD19DE17E400CDBD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		580C68AE19DE17E400CDBD88 /* Build configuration list for PBXNativeTarget "textInputTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +433,7 @@
 				580C68B019DE17E400CDBD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,6 +15,7 @@
 
 @property (strong,nonatomic) epAnimatedTextField *animatedTextField;
 
+
 @end
 
 
@@ -24,6 +25,8 @@
 @implementation ViewController
 
 @synthesize animatedTextField = _animatedTextField;
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,8 +40,8 @@
     
     // set up the text field
 
-    _animatedTextField = [[epAnimatedTextField alloc] initWithFrame:CGRectMake(100, 100, 400, 60) icon:icon];
-    _animatedTextField.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.8];
+    _animatedTextField = [[epAnimatedTextField alloc] initWithFrame:CGRectMake(100, 100, 568, 60) icon:icon];
+    _animatedTextField.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5];
     _animatedTextField.textColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     _animatedTextField.font = [UIFont fontWithName:@"Helvetica" size:24];
     _animatedTextField.delegate = self;
@@ -50,16 +53,6 @@
     [self.view addSubview:_animatedTextField];
 
 
-    
-    // make the text field pop up
-    
-    NSTimer *timer = [NSTimer
-                      scheduledTimerWithTimeInterval:3.0
-                      target:self
-                      selector:@selector(makeAnimatedTextFieldAppear)
-                      userInfo:nil
-                      repeats:NO];
-    
     
     
     
@@ -81,9 +74,34 @@
 
 #pragma mark - Animation
 
-- (void)makeAnimatedTextFieldAppear {
+
+- (IBAction)appearAction:(id)sender {
     
-    [_animatedTextField playAppearAnimationWithDuration:0.2];
+    // Make AnimatedTextField appear
+    
+    if ( ! [_animatedTextField isFirstResponder]) {
+    
+        [_animatedTextField playAppearAnimationWithDuration:0.2];
+        [_animatedTextField becomeFirstResponder];
+
+    }
+    
+}
+
+
+
+
+- (IBAction)disappearAction:(id)sender {
+    
+    // Make AnimatedTextField disappear
+    
+    if ([_animatedTextField isFirstResponder]) {
+        
+        [_animatedTextField playDisappearAnimationWithDuration:0.2];
+        [_animatedTextField resignFirstResponder];
+    
+    }
+    
     
     
 }
