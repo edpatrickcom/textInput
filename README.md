@@ -15,7 +15,7 @@ epAnimatedTextField is a tiny class that helps you create Text Fields that can p
 
 // Import epAnimatedTextField.h at the top of your ViewController
 
-#import "epAnimatedTextField.h"
+import "epAnimatedTextField.h"
 
 
 // Declare a Text Field somewhere in your ViewController

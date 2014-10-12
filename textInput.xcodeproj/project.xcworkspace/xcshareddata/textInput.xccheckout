@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74ADE504-9253-4EA7-8826-4728552883B9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>textInput</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>61D9635104619896AE13C30F01EAFB7536156DBA</key>
+		<string>https://github.com/edpatrickcom/textInput.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>textInput.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>61D9635104619896AE13C30F01EAFB7536156DBA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/edpatrickcom/textInput.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>61D9635104619896AE13C30F01EAFB7536156DBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>61D9635104619896AE13C30F01EAFB7536156DBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>textInput</string>
+		</dict>
+	</array>
+</dict>
+</plist>
