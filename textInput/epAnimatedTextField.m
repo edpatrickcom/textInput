@@ -103,7 +103,7 @@
 
 
 
-// Can put custom drawing code in drawRect
+// Put custom drawing code in drawRect
 
 /*
 
@@ -222,9 +222,7 @@
 
 - (CABasicAnimation *)makeDisappearAnimationWithDuration:(float)duration {
     
-    
-    NSLog(@"makeDisappearAnimationWithDuration %f", _scaleSmall);
-    
+
     // Create a basic animation changing the transform.scale value
     
     CABasicAnimation *theAnimation = [[CABasicAnimation alloc] init];

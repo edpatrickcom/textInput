@@ -121,6 +121,10 @@
     [_animatedTextField resignFirstResponder];
     
     
+    // disappear the Animated Text Field
+    
+    [_animatedTextField playDisappearAnimationWithDuration:0.2];
+
     
     
     // print the value submitted
@@ -128,10 +132,6 @@
     NSLog(@"textFieldShouldReturn %@", textField.text);
     
     
-    
-    
-    
-    // done
     
     return YES;
     
