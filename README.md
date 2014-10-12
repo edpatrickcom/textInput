@@ -54,7 +54,7 @@ Setup the delegate and attach to your view
 ```
 // Set yourself to be the delegate
 
-_animatedTextField.delegate = self;
+animatedTextField.delegate = self;
 
 
 // Add the Text Field to your view
@@ -68,13 +68,13 @@ To make an Animated Text Field Appear or Disappear
 ```
 // To make the Text Field appear
 
-[_animatedTextField playAppearAnimationWithDuration:0.2];
+[animatedTextField playAppearAnimationWithDuration:0.2];
 
 
 
 // To make the Text Field disappear
 
-[_animatedTextField playDisappearAnimationWithDuration:0.2];
+[animatedTextField playDisappearAnimationWithDuration:0.2];
 ```
 
 
