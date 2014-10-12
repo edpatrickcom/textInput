@@ -76,3 +76,12 @@ To make an Animated Text Field Appear or Disappear
 
 [_animatedTextField playDisappearAnimationWithDuration:0.2];
 ```
+
+
+To do custom drawing of the Animated Text Field
+
+```
+// Uncomment and edit drawRect
+
+- (void)drawRect:(CGRect)rect;
+```
