@@ -11,13 +11,13 @@ subclass of UITextField to add simple animations and layout features
 
 ## How to use it?
 
-1. Import epAnimatedTextField.h
+Import epAnimatedTextField.h
 
 ```
 #import "epAnimatedTextField.h"
 ```
 
-2. Create the Animated Text Field
+Create the Animated Text Field
 
 ```
 // Declare a Text Field
