@@ -45,3 +45,15 @@ animatedTextField.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5
 animatedTextField.textColor       = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
 animatedTextField.font            = [UIFont fontWithName:@"Helvetica" size:24];
 ```
+
+Setup the delegate and attach to your view
+```
+// Set yourself to be the delegate
+
+_animatedTextField.delegate = self;
+
+
+// Add the Text Field to your view
+
+[self.view addSubview:animatedTextField];
+```
